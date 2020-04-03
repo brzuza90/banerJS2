@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        header img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: white;
+
+        }
+
+        header .dots {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        header .dots span {
+            margin: 20px 10px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+        span.active {
+            box-shadow: 0 0 0 7px tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="slider" src="img/img2.jpg" alt="Obrazek1">
+        <h1 class="slider">Pierwszy tekst</h1>
+        <div class="dots">
+            <span id="one" class="active"></span>
+            <span id="two"></span>
+            <span id="three"></span>
+        </div>
+    </header>
+    <script src="main.js"></script>
+</body>
+
+</html>
